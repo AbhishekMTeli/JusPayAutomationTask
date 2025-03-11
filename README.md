@@ -34,6 +34,7 @@ src/
 Framework Components
 🏗 1️⃣ Base Configuration (BaseConfiguration.java)
 Handles browser setup and teardown
+
 Initializes the WebDriver
 🛠 2️⃣ Common Utility Class (CommonActions.java)
 Provides helper methods for interacting with UI elements:
@@ -42,15 +43,18 @@ click(By locator): Clicks on an element
 enterText(By locator, String text): Enters text into an input field
 pressEnter(): Simulates pressing the Enter key
 switchToNewWindow(): Switches focus to a new browser tab
+
 📑 3️⃣ Page Object Model (POM)
 Each webpage has a dedicated class:
 
 HomePage.java → Handles product search functionality
 ProductPage.java → Manages product selection and adding to cart
 CheckoutPage.java → Automates checkout and payment process
+
 🧪 4️⃣ Test Case (PaymentAutomation.java)
 Executes the end-to-end payment flow
 Uses TestNG for structured test execution
+
 🔄 Test Flow
 Search for a product (e.g., JBL speakers) on the homepage.
 Select a product from the search results.
