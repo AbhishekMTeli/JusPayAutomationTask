@@ -30,8 +30,7 @@ src/
 ### 🔧 Installation
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
-   cd <project_directory>
+   git clone [<repository_url>](https://github.com/AbhishekMTeli/JusPayAutomationTask)
 Framework Components
 🏗 1️⃣ Base Configuration (BaseConfiguration.java)
 Handles browser setup and teardown
