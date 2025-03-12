@@ -1,13 +1,14 @@
 package TestCase;
 
-import Base.BasicConfiguration;
-import Pages.HomePage;
-import Pages.ProductPage;
-import Pages.PaymentPage;
-import Utilities.CommonActions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import Base.BasicConfiguration;
+import Pages.HomePage;
+import Pages.PaymentPage;
+import Pages.ProductPage;
+import Utilities.CommonActions;
 
 public class PaymentAutomation extends BasicConfiguration {
     private HomePage homePage;
@@ -17,7 +18,7 @@ public class PaymentAutomation extends BasicConfiguration {
 
     @BeforeClass
     public void setUpTest() {
-        setup();
+    	setup2();
         actions = new CommonActions(driver, wait);
         homePage = new HomePage(driver, actions);
         productPage = new ProductPage(driver, actions);
@@ -30,7 +31,8 @@ public class PaymentAutomation extends BasicConfiguration {
         productPage.selectProduct();
         productPage.addToCart();
         paymentPage.proceedToPayment("9986102846");
-        paymentPage.enterCardDetails("123456789");
+        paymentPage.otp_pass("998610");
+       // paymentPage.enterCardDetails("123456789");
     }
 
     @AfterClass
